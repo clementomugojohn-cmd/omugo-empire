@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Omugo Empire - Authentic Omugo & African Kitchen</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#fffaf5;color:#333}
-nav{position:fixed;top:0;width:100%;background:#fff;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.1);z-index:1000}
-.logo{font-weight:900;font-size:22px;color:#c0392b} .logo span{color:#e67e22}
-nav ul{display:flex;list-style:none;gap:18px}
-nav ul li a{text-decoration:none;color:#333;font-weight:600}
-.hero{padding:120px 5% 60px;text-align:center;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c');background-size:cover;color:#fff;min-height:70vh;display:flex;flex-direction:column;justify-content:center}
-.hero h1{font-size:40px;margin-bottom:15px} .hero p{font-size:18px;margin-bottom:25px;max-width:700px;margin-left:auto;margin-right:auto}
-.btn{padding:13px 26px;border-radius:25px;text-decoration:none;display:inline-block;margin:5px;font-weight:bold}
-.btn-whatsapp{background:#25D366;color:#fff} .btn-call{background:#e67e22;color:#fff}
-section{padding:60px 5%} h2{text-align:center;color:#c0392b;margin-bottom:30px;font-size:32px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.08);text-align:center}
-.contact-box{background:#c0392b;color:#fff;border-radius:15px;padding:30px;text-align:center}
-footer{text-align:center;padding:20px;background:#222;color:#fff;margin-top:20px}
-</style>
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OMUGO EMPIRE - Your Trusted Marketplace</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:#FFFCF5;color:#0f2417}
+header{position:sticky;top:0;z-index:100;background:rgba(255,252,245,.95);display:flex;justify-content:space-between;align-items:center;padding:12px 5%;border-bottom:1px solid #eee}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:20px}.logo b{color:#0D4A2E}.logo span{color:#C9A227}.logo img{height:32px}
+.btn{display:inline-flex;padding:12px 22px;border-radius:30px;font-weight:700;text-decoration:none}
+.btn-green{background:#0D4A2E;color:#fff}.btn-gold{background:#C9A227;color:#111}
+.hero{display:grid;gap:30px;padding:40px 5%}
+.hero h1{font-size:48px;line-height:1.05;font-weight:800}.hero h1 i{color:#1a6b42;font-style:normal}
+.prod-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:900px){.prod-grid{grid-template-columns:repeat(4,1fr)} .hero{grid-template-columns:1.1fr .9fr}}
+.card{background:#fff;border-radius:16px;overflow:hidden;border:1px solid #eee}
+.card img{width:100%;height:160px;object-fit:cover}.card-body{padding:12px}.price{font-weight:800;margin:6px 0}
+.add{width:100%;background:#0D4A2E;color:#fff;border:none;padding:10px;border-radius:10px;font-weight:700;cursor:pointer}
+</style></head>
 <body>
-<nav>
-  <div class="logo">OMUGO <span>EMPIRE</span></div>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#menu">Menu</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-<div id="home" class="hero">
-  <h1>Welcome to Omugo Empire</h1>
-  <p>Authentic Igbo Omugo Soup & Traditional Dishes - Nutritious meals for new mothers & families. Fresh, Hygienic, Delicious.</p>
-  <div>
-    <a href="https://wa.me/2347035399931?text=Hello%20Omugo%20Empire%20I%20want%20to%20order" class="btn btn-whatsapp">Order on WhatsApp</a>
-    <a href="tel:+2347035399931" class="btn btn-call">Call Now</a>
-  </div>
+<header><div class="logo"><img src="logo-gold.png"><b>OMUGO</b> <span>EMPIRE</span></div>
+<div style="display:flex;gap:10px"><a href="https://wa.me/2347035399931" style="border:1px solid #ddd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none">🛒</a>
+<a href="#shop" style="border:1px solid #ddd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none">☰</a></div></header>
+
+<section class="hero">
+<div><div style="background:#FFF4CC;border:1px solid #F5E6A3;display:inline-block;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;margin-bottom:14px">✔ Nigeria's trusted marketplace</div>
+<h1>Your Trusted Marketplace for <i>Everything</i></h1>
+<p style="margin:14px 0;color:#5a6b5f">Buy quality products, sell to thousands, advertise your brand and access trusted services — all in one place, across Nigeria and worldwide.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-green" href="#shop">Shop Now →</a><a class="btn" style="background:#fff;border:1px solid #ddd" href="https://wa.me/2347035399931?text=I%20want%20to%20sell%20with%20Omugo">Sell With Us</a></div>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px;font-size:12px;font-weight:600"><div>✓ Secure Payments</div><div>🚚 Nationwide Delivery</div><div>✔ Verified Sellers</div><div>🎧 24/7 Support</div></div>
 </div>
-<section id="about">
-  <h2>About Us</h2>
-  <p style="max-width:700px;margin:0 auto;text-align:center;line-height:1.7">At Omugo Empire, we specialize in nutritious, healing postpartum meals (Omugo) for new mothers. Our soups are made with Uziza, Uda, Achi and fresh ingredients that help recovery. We also serve authentic African dishes. Based in Nigeria, delivering love in every plate.</p>
+<div><img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600" style="width:100%;border-radius:20px;height:380px;object-fit:cover"><div style="background:#fff;padding:12px;border-radius:14px;margin-top:-40px;position:relative;box-shadow:0 10px 30px rgba(0,0,0,.1);margin-left:10px;margin-right:10px">📦 Payment secured - Buyer protection active<br>🟢 Order delivered - Lagos - Abuja, 2 days</div></div>
 </section>
-<section id="menu" style="background:#fff3e8">
-  <h2>Our Menu</h2>
-  <div class="cards">
-    <div class="card"><h3>Omugo Soup Special</h3><p>Uziza, Uda, Achi - rich in nutrients for recovery</p><p><b>₦5,000</b></p></div>
-    <div class="card"><h3>Complete Omugo Package</h3><p>Soup + Fufu + Fish + Delivery</p><p><b>₦12,000</b></p></div>
-    <div class="card"><h3>Family Platter</h3><p>Ofe Nsala, Banga, Egusi - for the whole family</p><p><b>₦8,000</b></p></div>
-  </div>
+
+<section style="padding:40px 5%;background:#fff" id="shop">
+<h2 style="text-align:center;font-size:32px;margin-bottom:6px">One empire, four ways to grow</h2>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0">
+<div style="background:#FFFCF5;border:1px solid #f0e6d0;border-radius:16px;padding:18px"><h3>BUY</h3><p style="font-size:12px;color:#666">Shop quality products from verified sellers</p><a href="#products" style="font-size:12px;font-weight:700;color:#0D4A2E">Start shopping →</a></div>
+<div style="background:#FFFCF5;border:1px solid #f0e6d0;border-radius:16px;padding:18px"><h3>SELL</h3><p style="font-size:12px;color:#666">Reach thousands of buyers</p><a href="https://wa.me/2347035399931?text=I%20want%20to%20become%20a%20seller" style="font-size:12px;font-weight:700;color:#0D4A2E">Become a seller →</a></div>
+<div style="background:#FFFCF5;border:1px solid #f0e6d0;border-radius:16px;padding:18px"><h3>ADVERTISE</h3><p style="font-size:12px;color:#666">Put your brand in front of buyers</p><a href="#advertise" style="font-size:12px;font-weight:700;color:#0D4A2E">See ad packages →</a></div>
+<div style="background:#FFFCF5;border:1px solid #f0e6d0;border-radius:16px;padding:18px"><h3>SERVICES</h3><p style="font-size:12px;color:#666">Logistics, marketing support</p><a href="#services" style="font-size:12px;font-weight:700;color:#0D4A2E">Explore services →</a></div>
+</div>
+
+<h2 style="margin-top:40px">Featured products</h2>
+<div class="prod-grid" style="margin-top:14px" id="products">
+<div class="card"><img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?w=400"><div class="card-body"><h4>Raw Shea Butter Gift Set</h4><p style="font-size:11px;color:#777">Quality you can trust</p><div class="price">CFA6500</div><button class="add" onclick="location.href='https://wa.me/2347035399931?text=I%20want%20Shea%20Butter%20CFA6500'">🛒 Add to Cart</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400"><div class="card-body"><h4>Wireless Bluetooth Speaker</h4><p style="font-size:11px;color:#777">Quality you can trust</p><div class="price">CFA15000</div><button class="add" onclick="location.href='https://wa.me/2347035399931?text=I%20want%20Bluetooth%20Speaker%20CFA15000'">🛒 Add to Cart</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1603808033587-9359428479d5?w=400"><div class="card-body"><h4>Handcrafted Leather Sandals</h4><p style="font-size:11px;color:#777">Quality you can trust</p><div class="price">CFA12000</div><button class="add" onclick="location.href='https://wa.me/2347035399931?text=I%20want%20Leather%20Sandals%20CFA12000'">🛒 Add to Cart</button></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400"><div class="card-body"><h4>Ankara Print Tote Bag</h4><p style="font-size:11px;color:#777">Quality you can trust</p><div class="price">CFA8500</div><button class="add" onclick="location.href='https://wa.me/2347035399931?text=I%20want%20Tote%20Bag%20CFA8500'">🛒 Add to Cart</button></div></div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;text-align:center;padding:30px 0;border-top:1px solid #eee;margin-top:30px;border-bottom:1px solid #eee">
+<div><b style="font-size:22px">12,000+</b><br><small>Happy Customers</small></div>
+<div><b style="font-size:22px">8,500+</b><br><small>Orders Delivered</small></div>
+<div><b style="font-size:22px">618+</b><br><small>Verified Sellers</small></div>
+<div><b style="font-size:22px">24/7</b><br><small>Customer Support</small></div>
+</div>
 </section>
-<section id="contact">
-  <h2>Contact Us</h2>
-  <div class="contact-box">
-    <p>📍 Location: Nigeria - Nationwide Delivery</p><br>
-    <p>📞 Phone: +234 703 539 9931</p><br>
-    <p>💬 WhatsApp: Fast Response</p><br><br>
-    <a href="https://wa.me/2347035399931?text=Hello%20Omugo%20Empire%20I%20want%20to%20order" class="btn btn-whatsapp" style="background:#fff;color:#25D366">Chat on WhatsApp Now</a>
-  </div>
+
+<section style="padding:40px 5%;background:#fff" id="advertise">
+<h2 style="text-align:center">Put your brand in front of ready buyers</h2>
+<div style="display:grid;gap:14px;margin-top:20px">
+<div style="border:1px solid #ddd;border-radius:16px;padding:18px"><h3>Starter Boost - 10,000 XOF / month</h3><p style="font-size:12px">✓ Homepage banner 7 days<br>✓ 1 sponsored post<br>✓ Newsletter<br>✓ Basic report</p><br><a class="btn btn-green" style="width:100%;justify-content:center" href="https://wa.me/2347035399931?text=I%20want%20Starter%20Boost%2010k">Get Started →</a></div>
+<div style="background:#0D4A2E;color:#fff;border-radius:16px;padding:18px"><h3>Business Growth - 25,000 XOF / month</h3><p style="font-size:12px;color:#cce8d5">✓ Featured product 14 days<br>✓ 4 sponsored posts<br>✓ Category banner<br>✓ Priority ranking<br>✓ Monthly report</p><br><a class="btn btn-gold" style="width:100%;justify-content:center" href="https://wa.me/2347035399931?text=I%20want%20Business%20Growth%2025k">Get Started →</a></div>
+<div style="border:1px solid #ddd;border-radius:16px;padding:18px"><h3>Empire Takeover - 60,000 XOF / month</h3><p style="font-size:12px">✓ Homepage hero 30 days<br>✓ Unlimited promo<br>✓ Email blast<br>✓ Dedicated manager<br>✓ Priority support</p><br><a class="btn btn-green" style="width:100%;justify-content:center" href="https://wa.me/2347035399931?text=I%20want%20Empire%20Takeover%2060k">Get Started →</a></div>
+</div>
 </section>
-<footer>© 2026 Omugo Empire - +234 703 539 9931</footer>
+
+<section style="padding:40px 5%;background:#0D4A2E;color:#fff;border-radius:20px;margin:20px 5%;text-align:center">
+<h2>Ready to buy, sell or grow with us?</h2><p style="color:#c8e6d5;margin:10px 0 20px">Join thousands who trust OMUGO EMPIRE</p>
+<a class="btn btn-gold" href="#shop">Start Shopping</a> <a class="btn" style="background:#fff;color:#0D4A2E" href="https://wa.me/2347035399931">Chat on WhatsApp</a>
+</section>
+
+<footer style="padding:30px 5%;font-size:12px;color:#666;border-top:1px solid #eee">
+<b style="color:#0D4A2E">OMUGO EMPIRE</b> - Your trusted marketplace<br><br>
+MARKETPLACE: Shop Products | Our Services | Advertise | About<br><br>
+SUPPORT: Contact Us | Sign In | Create Account<br><br>
+GET IN TOUCH: Chat on WhatsApp +2347035399931 | hello@omugoempire.com | Lagos, Nigeria + Abomey-Calavi, BJ<br><br>
+WE ACCEPT: Paystack, Flutterwave, Bank Transfer, USSD, Visa, Mastercard, PayPal, Verve<br><br>
+© 2026 OMUGO EMPIRE
+</footer>
+
+<a href="https://wa.me/2347035399931" style="position:fixed;bottom:20px;left:20px;background:#25D366;color:#fff;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:24px">💬</a>
+<a href="https://wa.me/2347035399931" style="position:fixed;bottom:20px;right:20px;background:#0D4A2E;color:#fff;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none">🛒</a>
 </body>
 </html>
