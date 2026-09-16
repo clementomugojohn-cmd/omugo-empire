@@ -1,104 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OMUGO EMPIRE - Your Trusted Marketplace</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<script>
-tailwind.config = {
-  theme: { extend: { colors: { royal: '#0F4C81', gold: '#D4AF37' }, fontFamily: { poppins: ['Poppins'] } } }
-}
-</script>
-<style>body{font-family:'Poppins',sans-serif}.glass{backdrop-filter:blur(16px); background:rgba(255,255,255,0.8)}.gold-gradient{background:linear-gradient(135deg,#D4AF37,#F4D03F)}</style>
+<title>Omugo Empire - Authentic Omugo & African Kitchen</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#fffaf5;color:#333}
+nav{position:fixed;top:0;width:100%;background:#fff;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.1);z-index:1000}
+.logo{font-weight:900;font-size:22px;color:#c0392b} .logo span{color:#e67e22}
+nav ul{display:flex;list-style:none;gap:18px}
+nav ul li a{text-decoration:none;color:#333;font-weight:600}
+.hero{padding:120px 5% 60px;text-align:center;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c');background-size:cover;color:#fff;min-height:70vh;display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:40px;margin-bottom:15px} .hero p{font-size:18px;margin-bottom:25px;max-width:700px;margin-left:auto;margin-right:auto}
+.btn{padding:13px 26px;border-radius:25px;text-decoration:none;display:inline-block;margin:5px;font-weight:bold}
+.btn-whatsapp{background:#25D366;color:#fff} .btn-call{background:#e67e22;color:#fff}
+section{padding:60px 5%} h2{text-align:center;color:#c0392b;margin-bottom:30px;font-size:32px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.08);text-align:center}
+.contact-box{background:#c0392b;color:#fff;border-radius:15px;padding:30px;text-align:center}
+footer{text-align:center;padding:20px;background:#222;color:#fff;margin-top:20px}
+</style>
 </head>
-<body class="bg-white text-[#222]">
-
-<!-- NAVBAR -->
-<nav class="sticky top-0 z-50 glass border-b border-gray-100">
-<div class="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
-<div class="flex items-center gap-2 font-bold text-xl"><span class="w-9 h-9 bg-[#0F4C81] text-white grid place-items-center rounded-lg">O</span> OMUGO <span class="text-[#D4AF37]">EMPIRE</span></div>
-<div class="hidden lg:flex gap-6 text-sm font-medium">
-<a href="#">Home</a><a href="#">Marketplace</a><a href="#">Categories</a><a href="#">Services</a><a href="#" class="text-[#0F4C81]">Become a Seller</a>
-</div>
-<div class="flex items-center gap-3">
-<button class="w-9 h-9 rounded-full bg-gray-100"><i class="fa fa-search"></i></button>
-<button class="w-9 h-9 rounded-full bg-gray-100"><i class="fa fa-shopping-bag"></i></button>
-<a href="#" class="hidden md:block bg-[#0F4C81] text-white px-5 py-2.5 rounded-full text-sm font-semibold">Login</a>
-</div>
-</div>
+<body>
+<nav>
+  <div class="logo">OMUGO <span>EMPIRE</span></div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
-
-<!-- HERO -->
-<section class="bg-[#F5F5F5] relative overflow-hidden">
-<div class="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
-<div>
-<span class="inline-flex items-center gap-2 bg-white border rounded-full px-4 py-1.5 text-xs font-semibold"><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> 2,543 sellers online now</span>
-<h1 class="text-5xl lg:text-6xl font-bold leading-[1.1] mt-6">Everything You Need in <span class="text-[#0F4C81]">One Marketplace</span></h1>
-<p class="text-gray-600 mt-5 text-lg">Buy products, sell your goods, advertise your business, and discover trusted services—all in one place.</p>
-<div class="flex gap-3 mt-8">
-<button class="bg-[#0F4C81] text-white px-7 py-3.5 rounded-full font-semibold">Shop Now <i class="fa fa-arrow-right ml-2"></i></button>
-<button class="bg-white border px-7 py-3.5 rounded-full font-semibold">Become a Seller</button>
+<div id="home" class="hero">
+  <h1>Welcome to Omugo Empire</h1>
+  <p>Authentic Igbo Omugo Soup & Traditional Dishes - Nutritious meals for new mothers & families. Fresh, Hygienic, Delicious.</p>
+  <div>
+    <a href="https://wa.me/2347035399931?text=Hello%20Omugo%20Empire%20I%20want%20to%20order" class="btn btn-whatsapp">Order on WhatsApp</a>
+    <a href="tel:+2347035399931" class="btn btn-call">Call Now</a>
+  </div>
 </div>
-<div class="flex items-center gap-6 mt-8">
-<div class="flex -space-x-3"><img src="https://i.pravatar.cc/40?img=1" class="w-9 h-9 rounded-full border-2 border-white"><img src="https://i.pravatar.cc/40?img=2" class="w-9 h-9 rounded-full border-2 border-white"><img src="https://i.pravatar.cc/40?img=3" class="w-9 h-9 rounded-full border-2 border-white"></div>
-<div class="text-sm"><b>15,000+ Happy Customers</b> <span class="text-yellow-500">★★★★★ 4.9</span></div>
-</div>
-</div>
-<div class="relative">
-<div class="bg-white rounded-[32px] shadow-2xl p-6 rotate-3">
-<div class="bg-[#0F4C81] rounded-2xl h-64 grid place-items-center text-white text-6xl"><i class="fa fa-box-open"></i></div>
-<div class="flex justify-between mt-4"><div><b>Premium Headset</b><p class="text-sm text-gray-500">Verified Seller</p></div><b class="text-[#0F4C81]">$89</b></div>
-</div>
-<div class="absolute -top-6 -right-6 bg-white shadow-xl rounded-2xl p-4 flex items-center gap-3"><span class="w-10 h-10 gold-gradient grid place-items-center rounded-xl"><i class="fa fa-truck"></i></span><div><b class="text-sm">Fast Delivery</b><p class="text-xs text-gray-500">2-3 days</p></div></div>
-<div class="absolute -bottom-8 -left-8 bg-black text-white rounded-2xl p-4 flex items-center gap-3"><i class="fa fa-shield text-[#D4AF37] text-xl"></i><div><b class="text-sm">Secure Payment</b><p class="text-xs text-gray-400">100% Protected</p></div></div>
-</div>
-</div>
+<section id="about">
+  <h2>About Us</h2>
+  <p style="max-width:700px;margin:0 auto;text-align:center;line-height:1.7">At Omugo Empire, we specialize in nutritious, healing postpartum meals (Omugo) for new mothers. Our soups are made with Uziza, Uda, Achi and fresh ingredients that help recovery. We also serve authentic African dishes. Based in Nigeria, delivering love in every plate.</p>
 </section>
-
-<!-- SEARCH -->
-<section class="max-w-4xl mx-auto -mt-8 relative z-10 px-6">
-<div class="bg-white rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.1)] p-2 flex items-center gap-2 border">
-<select class="hidden md:block bg-gray-50 rounded-full px-4 py-3 text-sm font-medium border-0 outline-none"><option>All Categories</option><option>Electronics</option><option>Fashion</option></select>
-<input type="text" placeholder="Search for products, vendors, services..." class="flex-1 px-4 py-3 outline-none text-sm">
-<button class="w-11 h-11 bg-gray-100 rounded-full"><i class="fa fa-microphone text-gray-600"></i></button>
-<button class="bg-[#0F4C81] text-white w-12 h-12 rounded-full"><i class="fa fa-search"></i></button>
-</div>
-<p class="text-center text-xs text-gray-500 mt-3">Trending: iPhone 15 • Sneakers • Real Estate • Graphic Design</p>
+<section id="menu" style="background:#fff3e8">
+  <h2>Our Menu</h2>
+  <div class="cards">
+    <div class="card"><h3>Omugo Soup Special</h3><p>Uziza, Uda, Achi - rich in nutrients for recovery</p><p><b>₦5,000</b></p></div>
+    <div class="card"><h3>Complete Omugo Package</h3><p>Soup + Fufu + Fish + Delivery</p><p><b>₦12,000</b></p></div>
+    <div class="card"><h3>Family Platter</h3><p>Ofe Nsala, Banga, Egusi - for the whole family</p><p><b>₦8,000</b></p></div>
+  </div>
 </section>
-
-<!-- CATEGORIES + STATS + CTA - Simplified for phone copy -->
-<section class="max-w-7xl mx-auto px-6 py-16">
-<h2 class="text-3xl font-bold text-center">Shop by Category</h2>
-<div class="grid grid-cols-3 md:grid-cols-6 gap-4 mt-8">
-<div class="bg-[#F5F5F5] rounded-2xl p-5 text-center hover:shadow-lg transition"><div class="text-2xl">📱</div><p class="text-sm font-semibold mt-2">Phones</p></div>
-<div class="bg-[#F5F5F5] rounded-2xl p-5 text-center hover:shadow-lg transition"><div class="text-2xl">💻</div><p class="text-sm font-semibold mt-2">Computers</p></div>
-<div class="bg-[#F5F5F5] rounded-2xl p-5 text-center hover:shadow-lg transition"><div class="text-2xl">👗</div><p class="text-sm font-semibold mt-2">Fashion</p></div>
-<div class="bg-[#F5F5F5] rounded-2xl p-5 text-center hover:shadow-lg transition"><div class="text-2xl">🏠</div><p class="text-sm font-semibold mt-2">Home</p></div>
-<div class="bg-[#F5F5F5] rounded-2xl p-5 text-center hover:shadow-lg transition"><div class="text-2xl">🚗</div><p class="text-sm font-semibold mt-2">Vehicles</p></div>
-<div class="bg-[#F5F5F5] rounded-2xl p-5 text-center hover:shadow-lg transition"><div class="text-2xl">💼</div><p class="text-sm font-semibold mt-2">Services</p></div>
-</div>
-
-<div class="mt-16 bg-[#0F4C81] rounded-[32px] p-8 lg:p-12 text-white grid lg:grid-cols-2 gap-8 items-center">
-<div>
-<h2 class="text-4xl font-bold">Start Selling Today</h2>
-<p class="text-white/80 mt-3">Join 2,500+ vendors growing on Omugo Empire. Zero setup fee.</p>
-<button class="mt-6 bg-[#D4AF37] text-black px-7 py-3 rounded-full font-bold">Become a Seller - It's Free</button>
-</div>
-<div class="grid grid-cols-3 gap-4 text-center">
-<div class="bg-white/10 rounded-2xl p-4"><b class="text-2xl">10K+</b><p class="text-xs">Products</p></div>
-<div class="bg-white/10 rounded-2xl p-4"><b class="text-2xl">15K+</b><p class="text-xs">Customers</p></div>
-<div class="bg-white/10 rounded-2xl p-4"><b class="text-2xl">99.9%</b><p class="text-xs">Satisfaction</p></div>
-</div>
-</div>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p>📍 Location: Nigeria - Nationwide Delivery</p><br>
+    <p>📞 Phone: +234 703 539 9931</p><br>
+    <p>💬 WhatsApp: Fast Response</p><br><br>
+    <a href="https://wa.me/2347035399931?text=Hello%20Omugo%20Empire%20I%20want%20to%20order" class="btn btn-whatsapp" style="background:#fff;color:#25D366">Chat on WhatsApp Now</a>
+  </div>
 </section>
-
-<footer class="bg-black text-white py-12 text-center text-sm">
-<p>© 2026 Omugo Empire. All Rights Reserved. | Secure Payments • Verified Vendors • Buyer Protection</p>
-</footer>
-
+<footer>© 2026 Omugo Empire - +234 703 539 9931</footer>
 </body>
 </html>
